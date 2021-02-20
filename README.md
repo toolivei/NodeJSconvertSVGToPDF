@@ -1,2 +1,2 @@
 # NodeJSconvertSVGToPDF
-API for converting from SVG to PDF format
+API for converting from SVG to PDF format!
