@@ -11,7 +11,7 @@ exports.handler = async (event) => {
     let buffSVG    = new Buffer.from(event.base64, 'base64');
     let contentSVG = buffSVG.toString();
 
-    let filename = '/tmp/temp'+crypto.randomBytes(4).readUInt32LE(0)+'.pdf';
+    let filename = 'temp'+crypto.randomBytes(4).readUInt32LE(0)+'.pdf';
 
     let docPDF  = new PDFDocument();
     let stream  = fs.createWriteStream(filename);
